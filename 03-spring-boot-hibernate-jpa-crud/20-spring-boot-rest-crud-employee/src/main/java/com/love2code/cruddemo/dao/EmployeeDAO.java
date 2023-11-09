@@ -1,2 +1,17 @@
-package com.love2code.cruddemo.dao;public class EmployeeDAO {
+package com.love2code.cruddemo.dao;
+
+import com.love2code.cruddemo.entity.Employee;
+
+import java.util.List;
+
+public interface EmployeeDAO {
+
+    List<Employee> findAll();
+
+    Employee findById(int theId);
+
+    Employee save(Employee theEmployee);
+
+    void deleteById(int theId);
+
 }
